@@ -1,0 +1,68 @@
+1)BEGIN
+2)read degree1:=degree of 1st polynomial equation,degree2:=degree of 2nd polynomial equation,counter:=degree1
+3)Repeat step 4-14 while(counter>=0)
+4)	read data
+5)	node->coeff:=data
+6)	node->power:=counter
+7)	node->next:=NULL
+8)	if(poly1=NULL)
+9)	   poly1:=node
+10)	   temp:=node
+	End if of step 8
+11)	if(poly1!=NULL)
+12)	   temp->next:=node
+13)	   temp:=node
+	End if of step 11
+14)counter--
+   END while of step 3
+16)counter:=degree2
+17)Repeat step 18-28 while(counter>=0)
+18)	read data
+19)	node->coeff:=data
+20)	node->power:=counter
+21)	node->next:=NULL
+22)	if(poly1=NULL)
+23)	   poly1:=node
+24)	   temp:=node
+	End if of step 8
+25)	if(poly1!=NULL)
+26)	   temp->next:=node
+27)	   temp:=node
+	End if of step 11
+28)counter--
+   END while of step 3
+29)temp1:=poly1,temp2:=poly2
+30)Repeat step 31-42 while(temp1!=NULL)
+31)	Repeat step 32-43 while(temp!=NULL)
+32)	      coeff = (temp1->coeff)*(temp->coeff)
+33)           power = (temp1->power)+(temp->power)
+34)           newNode->coeff = coeff
+35)           newNode->power = power
+36)           newNode->next = NULL
+37)           if(head=NULL)
+38)              head:=newNode
+39)              temp:=head
+              END if of step 37
+40)	      if(head!=NULL)
+41)              temp2->next:=newNode
+42)              temp2:=newNode
+	      END if of step 40
+43)	temp:=temp->next
+	END while of step 31
+44)temp1:=temp->next
+43)END while of step 30
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
