@@ -1,0 +1,16 @@
+		MAIN FUNCTION
+1)BEGIN
+2)read firstMatrix[10][10],secondMatrix[10][10],i:=0,j:=0
+3)Repeat step 4-10 while(i < row1)
+4)      Repeat step 5-10 while(j < column2)
+5)            Repeat step 6-7 while(k < row2)
+6)                  sum = sum + first[i][k]*second[k][j];
+7)		    k++
+	      END while of step 5
+8)	j++		
+9)      final[i][j] = sum;
+10)     sum = 0
+	END while of step 4
+   END while of step 3
+11)END
+     
