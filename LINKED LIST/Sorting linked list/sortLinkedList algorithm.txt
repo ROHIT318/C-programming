@@ -1,0 +1,47 @@
+1)BEGIN
+2)read firstList,secondList
+3)temp:=firstList
+4)Repeat step 5 while(temp!=NULL)
+5)	temp:=temp->next
+  END while of step 3
+6)temp->next:=secondList
+7)call sortList(firstList)
+8)print(firstList)
+9)END
+
+		sortList(node *start)
+1)BEGIN
+2)if(start=NULL) 
+     return
+  END if of step 2
+3)swapped:=0
+4)Repeat step 5- while(swapped)
+5)	lptr:=NULL
+6)	ptr:=start
+7)	Repeat step 8- while(ptr1->next != lptr)
+8)	      if((ptr1->data)>(ptr1->next->data))
+9)		temp:=ptr1->data
+10)		a->data = b->data; 
+11)  		b->data = temp; 
+12)	        swapped:=1
+13)	      END if of step 8
+14)	lptr<-ptr
+15)	END while of step 7
+   END while of step 4
+16)END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
